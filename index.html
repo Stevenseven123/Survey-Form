@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey Form</title>
+        <link href="css/styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="head">
+            <h1 id="title">Survey Form</h1>
+            <p id="description">This form will check if you know your stuff</p>
+        </div>
+        <div>
+            <form id="survey-form">
+                <label id="name-label">
+                    <input id="name" name="name" placeholder="Your name"> Full Name
+                </label>
+                <label id="email-label">
+                    <input id="email" type="email" name="email" required placeholder="Email"> Email
+                </label>
+                  <label id="number-label">
+                      <input id="number" type="number" name="age" required placeholder="Age" min="1" max="99"> Age<!-- 9 not done-->
+                  </label>
+                <div id="DP">
+                  <p>How are you today?</p>
+                    <select name="question" id="dropdown">
+                        <option value="1">Hi</option>
+                        <option value="2">Hii</option>
+                        <option value="3">Hiii</option>
+                    </select>
+                </div>
+                <div id="yesorno">
+                  <p>Do You like Anime?</p>
+                    <label>
+                        <input id="radio1" type="radio" name="anime"> Yes
+                    </label>
+                    <label>
+                        <input id="radio2" type="radio" name="anime"> No
+                    </label>
+                </div>
+                <div>
+                  <div id="checkbox">
+                    <p>What do you prefer?</p>
+                    <ul>
+                        <label>
+                            <input type="checkbox" value="OOF1" name="check1"> Anime
+                        </label>
+                        <label>
+                            <input type="checkbox" value="OOF2" name="check2"> Manga
+                        </label>
+                        <label>
+                            <input type="checkbox" value="OOF3" name="check3"> Dont Care
+                        </label>
+                    </ul>
+                  </div>
+                </div>
+                <textarea placeholder="Comment here anything!"></textarea>
+                <button id="submit">Submit</button>
+
+            </form>
+        </div>
+    </body>
+</html>
